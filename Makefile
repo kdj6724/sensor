@@ -1,5 +1,7 @@
+CROSS_COMPILE=arm-linux-gnueabihf-
+CC=$(CROSS_COMPILE)gcc
 LIB = periphery.a
-SRCS = src/gpio.c src/spi.c src/i2c.c src/mmio.c src/serial.c src/version.c
+SRCS = src/gpio.c src/spi.c src/i2c.c src/mmio.c src/serial.c src/version.c src/adc.c
 
 SRCDIR = src
 OBJDIR = obj
